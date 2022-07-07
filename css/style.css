@@ -1,0 +1,35 @@
+#small,
+#medium,
+#large {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: red;
+    font-size: 2em;
+  }
+  #small {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+  body {
+    background-color: green;
+    font-size: 1.2em;
+  }
+  #medium {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: blue;
+    font-size: 0.8em;
+  }
+  #large {
+    display: block;
+  }
+}
